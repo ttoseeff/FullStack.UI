@@ -6,23 +6,31 @@ import { AppComponent } from './app.component';
 import { EmployeesListComponent } from './components/employees/employees-list/employees-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditEmployeeComponent } from './components/edit-employee/edit-employee.component';
+import { EmployeeHomeComponent } from './components/employees/employee-home/employee-home.component';
+import { LoginFormComponent } from './components/login-management/login-form/login-form.component';
+import { UsersService } from './services/users.service';
+import { SigninComponent } from './components/login-management/signin/signin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesListComponent,
     AddEmployeeComponent,
-    EditEmployeeComponent
+    EditEmployeeComponent,
+    EmployeeHomeComponent,
+    LoginFormComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

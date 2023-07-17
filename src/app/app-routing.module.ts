@@ -3,11 +3,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { EmployeesListComponent } from './components/employees/employees-list/employees-list.component';
 import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
 import { EditEmployeeComponent } from './components/edit-employee/edit-employee.component';
+import { EmployeeHomeComponent } from './components/employees/employee-home/employee-home.component';
+import { LoginFormComponent } from './components/login-management/login-form/login-form.component';
+import { SigninComponent } from './components/login-management/signin/signin.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: EmployeesListComponent
+    component: SigninComponent
+  },
+  {
+    path: 'homepage',
+    component: EmployeeHomeComponent
   },
   {
     path: 'employees',
