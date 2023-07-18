@@ -12,6 +12,8 @@ import { EmployeeHomeComponent } from './components/employees/employee-home/empl
 import { LoginFormComponent } from './components/login-management/login-form/login-form.component';
 import { UsersService } from './services/users.service';
 import { SigninComponent } from './components/login-management/signin/signin.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SigninComponent } from './components/login-management/signin/signin.com
     EditEmployeeComponent,
     EmployeeHomeComponent,
     LoginFormComponent,
-    SigninComponent
+    SigninComponent,
+    PageNotFoundComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

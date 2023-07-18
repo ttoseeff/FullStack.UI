@@ -44,4 +44,12 @@ export class UsersService {
 
     this.currentUser.next(data);
   }
+
+  isLoggedIn(){
+    return localStorage.getItem('access_token') ? true : false;
+  }
+
+  logout() {
+    localStorage.removeItem('access_token');
+  }
 }
